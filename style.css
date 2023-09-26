@@ -1,0 +1,175 @@
+body{
+    background: #212529;
+}
+.nav-link{
+    color: #fff;
+    margin: 30px;
+    margin-left: 50px;
+}
+.nav-link:hover{
+    color: #aaa;
+}
+.nav-link:focus{
+    color: #aaa;
+}
+.navbar-brand{
+    color: #fff;
+    transition: 0.1s;
+    padding: 25px;
+    font-size: 40px;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.navbar-brand:focus{
+    color: #fff;
+}
+.btn{
+    width: 200px;
+    background-color: #a2c;
+    color: #fff;
+    border: #a2c;
+}
+.btn:hover{
+    background-color: #819;
+}
+.btn:active{
+    background-color: #819 !important;
+}
+div{
+    color: #fff;
+}
+h1{
+    margin: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 22px;
+}
+.Secciones{
+display: inline-block;
+padding: 20px;
+}
+.Sec1{
+    position: absolute;
+    top: 205px;
+    left: 150px;
+}
+.Sec2{
+position: absolute;
+left: 1000px;
+top: 200px;
+}
+.Sec3{
+    position: absolute;
+    top: 550px;
+    left: 150px;
+}
+.Sec4{
+    position: absolute;
+    top: 545px;
+    left: 1000px;
+}
+.Contenido{
+    background: gray;
+    border-radius: 20px;
+    width: 700px;
+    height: 280px;
+}
+i{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.player {
+    position: absolute;
+    position: fixed;
+    right: 880px;
+    left: 1px;
+    width: 1875px;
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ... Tus estilos anteriores ... */
+
+/* ... Tus estilos anteriores ... */
+
+.playlist {
+    position: relative;
+    width: 210px;
+    height: 250px;
+}
+
+#playlist-container {
+    background-color: #212529;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-left: 20px;
+    top: 14px;
+    padding-left: 9px;
+    padding-top: 4px;
+}
+
+#playlist-container:hover {
+    background-color: #212529c9;
+}
+
+#img-playlist-container {
+    width: 170px;
+    height: 160px;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+}
+
+#h4-p-container {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#h6-p-container {
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.play-button {
+    position: absolute;
+    top: 140px;
+    left: 160px;
+    transform: translate(-50%, -50%);
+    background-color: #212529;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente, ocultar el botón de reproducción */
+    transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Aplica una transición a opacity, width, height y background-color */
+}
+
+
+.playlist:hover .play-button {
+    opacity: 1; /* Mostrar el botón de reproducción al hacer hover en .playlist */
+}
+
+/* Estilos para el ícono de reproducción usando FontAwesome */
+.play-button i {
+    color: white;
+    font-size: 20px;
+}
+
+.play-button:hover {
+    width: 45px;
+    height: 45px;
+    background-color: #212529cc;
+}
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de musica</title>
+    <link rel="stylesheet" href="stylereproductor.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="./imagenes/reproductor.png">
+    <script src="https://kit.fontawesome.com/8c1ce7120d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <audio src="" id="audio"></audio>
+  <section id="container">
+    <ul class="cabeza">
+      <li><a href="index.html" class="exi"><i class="fa-solid fa-arrow-left"></i></a></li>
+      <li class="escuchando">Playing now</li>
+    </ul>
+    <div class="portada">
+      <img src="" alt="" id="portada-img">
+    </div>
+    <div id="cancion">
+      <div id="nombre">
+        Time
+      </div>
+      <div id="artista">
+        Pink Floyd
+      </div>
+    </div>
+    <div id="barra">
+      <div id="progreso" style="width: 0%;"></div>
+      <p class="pro">0:00</p>
+      <p class="dur">0:00</p>
+    </div>
+    <div id="controles">
+      <a href="#" class="min" id="anterior"><i class="fa-solid fa-backward"></i></a>
+      <button href="" class="max" id="boton-play"><i class="fa-solid fa-circle-play" id="estado"></i></button>
+      <a href="#" class="min" id="siguiente"><i class="fa-solid fa-forward"></i></a>
+    </div>
+  </section>
+  <script src="audio.js"></script>
+</body>
+</html>
