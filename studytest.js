@@ -107,3 +107,4 @@ function updateVolumeIcon() {
         audioVolumeIcon.src = "volume-icon.png";
     }
 }
+a 
