@@ -9,12 +9,19 @@
 </head>
 <body>
     <h1>Chill</h1><img src="./imagenes/chill.jpg" alt="" class="imgplaylist">
-    <div>
-        <input type="file" accept="audio/*" id="fileInput">
-    <audio controls id="audioPlayer"></audio>
+    <div id="playlist">
+        <ul id="song-list">
+            <!-- Aquí se mostrarán las canciones agregadas -->
+        </ul>
+        <div id="add-song">
+            <input type="text" id="song-name" placeholder="Nombre de la canción">
+            <input type="text" id="artist" placeholder="Artista">
+            <input type="file" id="song-file" accept=".mp3, .wav">
+            <button id="add-button">Agregar Canción</button>
+        </div>
     </div>
     <div><hr class="hr1">
-        <a href="reproductortime.html"><img src="./imagenes/The_Dark_Side_of_the_Moon_Cover.png" alt="" class="portadas"><h2 class="titulo">Time</h2>
+        <a href="reproductor.html"><img src="./imagenes/The_Dark_Side_of_the_Moon_Cover.png" alt="" class="portadas"><h2 class="titulo">Time</h2>
             <h5 class="artista">Pink Floyd</h5></a>
             <hr class="hr2">
         </div>

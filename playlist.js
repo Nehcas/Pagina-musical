@@ -11,7 +11,11 @@ fileInput.addEventListener('change', function() {
         audioPlayer.src = objectURL;
         audioPlayer.play();
     }
+<<<<<<< HEAD
 });
 
 
 
+=======
+});
+>>>>>>> b213cdf6602ae803d56078f77da93a49218c8be2

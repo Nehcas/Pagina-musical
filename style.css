@@ -1,6 +1,10 @@
 body{
     background: #212529;
 }
+.enlaceplaylist{
+    text-decoration: none;
+    color: #fff;
+}
 .nav-link{
     color: #fff;
     margin: 30px;
@@ -168,6 +172,21 @@ i{
     width: 45px;
     height: 45px;
     background-color: #212529cc;
+}
+/* Estilos para el modo claro (por defecto) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.modo-oscuro {
+    background-color: #212529;
+    color: #ffffff;
+    /* Otros estilos oscuros aquí */
+  }
+.textoMod{
+    color: #000;
 }
 
 .playlist22 {
