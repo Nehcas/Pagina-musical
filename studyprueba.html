@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="stylesheet" href="studytest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reproductor de Música</h1>
+        <input type="text" id="search" placeholder="Buscar canción">
+        <ul id="playlist">
+            <!-- Las canciones se agregarán dinámicamente aquí -->
+        </ul>
+        <div id="audio-player">
+            <audio id="audio" preload="auto"></audio>
+            <div id="audio-info">
+                <img src="album-cover.jpg" alt="Portada del álbum">
+                <h2 id="audio-title">Nombre de la Canción</h2>
+            </div>
+            <div id="audio-player-controls">
+                <button id="play-button"><img src="play-icon.png" alt="Play"></button>
+                <button id="pause-button"><img src="pause-icon.png" alt="Pause"></button>
+                <button id="stop-button"><img src="stop-icon.png" alt="Stop"></button>
+            </div>
+            <div id="audio-progress">
+                <div id="audio-progress-bar"></div>
+            </div>
+            <div id="audio-time">
+                <span id="audio-current-time">0:00</span>
+                <span id="audio-duration">0:00</span>
+            </div>
+            <div id="audio-volume">
+                <input type="range" id="audio-volume-slider" min="0" max="100" value="100">
+
+                <img id="audio-volume-icon" src="volume-icon.png" alt="Volumen">
+                
+            </div>
+        </div>
+    </div>
+    <script src="studytest.js"></script>
+</body>
+</html>
