@@ -189,6 +189,18 @@ body {
     color: #000;
 }
 
+.playlist22 {
+    margin-left: 245px !important;
+    margin-top: -250px;
+}
+
+.playlist33 {
+    margin-left: 470px !important;
+    margin-top: -250px;
+}
 
 
-
+.non-deco {
+    text-decoration: none;
+    color: white;
+}
