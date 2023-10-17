@@ -1,3 +1,8 @@
+
+// Function to capitalize the first letter of a string
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
 const playlist = document.getElementById("playlist");
 const audioPlayer = document.getElementById("audio");
 const searchInput = document.getElementById("search");
@@ -11,24 +16,28 @@ const audioDuration = document.getElementById("audio-duration");
 const audioVolumeIcon = document.getElementById("audio-volume-icon");
 const audioVolumeSlider = document.getElementById("audio-volume-slider");
 const audioVolumeSliderBar = document.getElementById("audio-volume-slider-bar");
+const artistName = document.getElementById("artist-name");
+const albumCover = document.querySelector('img[alt="Portada del álbum"]');
 
 // Función para agregar una canción a la lista de reproducción
-function addSongToPlaylist(songName, songSrc) {
+function addSongToPlaylist(songName, songArtist, songSrc, songCover) {
     const listItem = document.createElement("li");
     listItem.textContent = songName;
     listItem.setAttribute("data-src", songSrc);
+    listItem.setAttribute("data-cover", songCover);
+    listItem.setAttribute("data-artist", songArtist);
     playlist.appendChild(listItem);
 }
 
 // Cargar canciones desde tu colección de archivos MP3
 const songs = [
-    { name: "HOLA", src: "./media/onlymp3.to - Spektrem Shine NCS Release -n4tK7LYFxI0-192k-1695347898.mp3" },
+    { name: "Shine", artist: "NoCopyrightSounds", src: "./media/onlymp3.to - Spektrem Shine NCS Release -n4tK7LYFxI0-192k-1695347898.mp3", cover: "imagenes/ncs_portada.jpg" },
     { name: "Canción 2", src: "cancion2.mp3" },
     // Agrega más canciones aquí
 ];
 
 songs.forEach(song => {
-    addSongToPlaylist(song.name, song.src);
+    addSongToPlaylist(song.name, song.artist, song.src, song.cover);
 });
 
 // Función para buscar canciones y actualizar el reproductor de audio
@@ -48,7 +57,9 @@ searchInput.addEventListener("input", () => {
             song.style.display = "block";
             song.addEventListener("click", () => {
                 playSong(songSrc);
-                audioTitle.textContent = songName;
+                audioTitle.textContent = capitalizeFirstLetter(songName);
+                artistName.textContent = song.getAttribute("data-artist");
+                albumCover.src = song.getAttribute("data-cover");
             });
         } else {
             song.style.display = "none";
@@ -108,3 +119,13 @@ function updateVolumeIcon() {
     }
 }
 a 
+function togglePlayPause() {
+    const playPauseButton = document.getElementById('play-pause-button');
+    if (audio.paused || audio.ended) {
+        audio.play();
+        playPauseButton.textContent = 'Pause';
+    } else {
+        audio.pause();
+        playPauseButton.textContent = 'Play';
+    }
+}

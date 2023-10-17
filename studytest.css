@@ -55,10 +55,15 @@ h1 {
 
 /* Estilo para el reproductor de audio */
 #audio-player {
+    position: fixed;
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 640px;
+    margin-left: -640px;
+    width: 1838px;
+    height: 100px;
 }
 
 /* Estilo para la información de la canción */
@@ -84,7 +89,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -90px;
 }
 
 #audio-player-controls button {
@@ -98,10 +103,11 @@ h1 {
 #audio-progress {
     height: 10px;
     background-color: #555;
-    margin-top: 10px;
+    margin: 27px auto;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    width: 700px;
 }
 
 #audio-progress-bar {
@@ -109,19 +115,24 @@ h1 {
     width: 0;
     background-color: #1DB954;
     border-radius: 5px;
+
 }
 
 /* Estilo para el control de volumen */
 #audio-volume {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -23px;
+    width: 300px;
+    margin-left: 1500px;
 }
 
 #audio-volume-icon {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -23px;
 }
 
 #audio-volume-slider {
@@ -131,6 +142,8 @@ h1 {
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    margin-top: -24px;
+    
 }
 
 #audio-volume-slider-bar {
@@ -145,8 +158,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
     color: #1DB954;
+    margin-top: -42px;
 }
 
 
@@ -179,3 +192,47 @@ h1 {
 }
 
 
+#audio-duration {
+    position: relative;
+    left: -525px !important;
+}
+
+#audio-current-time {
+    position: relative;
+    left: 525px;
+}
+
+#audio-title {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-100%);
+    left: 130px;
+
+}
+
+#artist-name {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-100%);
+    left: 130px;
+}
+
+#album-cover {
+    position: relative;
+    width: 82px !important;
+    height: 82px !important;
+    top: -15px;
+}
+
+
+#play-button, #pause-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFF;
+}
+
+#pause-button {
+    display: none;
+}
